@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style_cnt.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <div class="logo">
+          <img src="Logo.png" alt="Logo">
+      </div>
+      <div class="centered">
+        <button onclick="redireccionarint()">Inicio</button>
+        <button onclick="redireccionarsbrn()">Sobre Nosotros</button>
+        <button onclick="redireccionarsrv()">Servicios</button>
+        <button onclick="redireccionarcnt()">Contacto</button>
+      </div>
+      <div class="right">
+          <button onclick="redireccionar()">Login & Register</button>
+      </div>
+  </nav>
+  <div class="parallax-container">
+    <div class="parallax-image"> <img src="mika-baumeister-J5yoGZLdpSI-unsplash.jpg"></div>
+  </div>
+  <div class="info">
+    <br>
+      <h3 style="text-align: left;">Contactanos!</h3>
+      
+      <p class="subtitle" style="margin-top: 20px;">Ponte en contacto y te responderemos lo antes posible. ¡Esperamos saber de ti pronto!</p>
+      
+      <h2 style="text-align: left; margin: 20px 0 0 140px;">Formulario de contacto</h4>
+        
+        <form action="/enviar-formulario" method="post">
+          <label for="nombre"><strong>Nombre:</strong></label>
+          <input type="text" id="nombre" name="nombre" required>
+        
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="mensaje"><strong>Mensaje:</strong></label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        
+          <button type="submit">Enviar</button>
+        </form>
+        
+
+  </div>
+  <div class="bottom-info">
+      <div class="textopub">Siguenos en:</div>
+      <hr class="hr1">
+  </div>
+  <div class="Facebook">
+    Facebook: LittleData
+  </div>
+  <hr class="hr2">
+  <span class="Instagram">
+    <br>Instagram: @LittleData
+  </span>
+  <hr class="hr3">
+  <span class="Twitter">
+    <br>Twitter: @LittleData
+  </span>
+  <hr class="hr4">
+</body>
+<script>
+  function redireccionarint() {
+    window.location.href = "index.html";
+}
+</script>
+<script>
+  function redireccionarsbrn() {
+    window.location.href = "sobre_nosotros.html";
+}
+</script>
+<script>
+  function redireccionarcnt() {
+    window.location.href = "contact.html";
+}
+</script>
+<script>
+  function redireccionarsrv() {
+    window.location.href = "servicios.html";
+}
+</script>
+<script>
+  function redireccionar() {
+    window.location.href = "Login/index.html";
+}
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+  var parallaxImage = document.querySelector('.parallax-image');
+  var scrollPosition = window.pageYOffset;
+
+  parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.4) + 'px)';
+});
+</script>
+
+</html>

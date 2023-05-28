@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style_srv.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <div class="logo">
+          <img src="Logo.png" alt="Logo">
+      </div>
+      <div class="centered">
+          <button onclick="redireccionarint()">Inicio</button>
+          <button onclick="redireccionarsbrn()">Sobre Nosotros</button>
+          <button onclick="redireccionarsrv()">Servicios</button>
+          <button onclick="redireccionarcnt()">Contacto</button>
+      </div>
+      <div class="right">
+          <button onclick="redireccionar()">Login & Register</button>
+      </div>
+  </nav>
+  <div class="parallax-container">
+    <div class="parallax-image"> <img src="mika-baumeister-J5yoGZLdpSI-unsplash.jpg"></div>
+  </div>
+  <div class="info">
+    <br>
+      <h3 style="text-align: left;">Nustros Servicios</h3>
+      <p class="subtitle" style="margin-top: 20px;">Trabajamos en las siguientes areas:</p>
+        <ol class="areasf" style="margin: 30px 0 0 220px">
+          <li>Base De Datos y Redes Empresariales</li>
+          <li>Sistemas Operativos</li>
+          <li>Automatizacion y Robotizacion</li>
+        </ol>
+      <p class="subtitle" style="margin-top: 20px;"><strong>Base De Datos y Redes Empresariales:</strong> Por la parte de redes y base de datos, nos hemos dedicado a perfeccionar cada vez más nuestra estructura de red, para conseguir la forma más eficiente de transmisión de datos, así aumentando nuestro flujo de trabajo, también a la hora de crear la base de datos, hemos implementado una forma de administración online, una herramienta con la cual podremos gestionar nuestra empresa en remoto, de todas formas posibles, con la cual hasta la persona más inexperta podrá aprender a gestionar la empresa en tan solo 5 minutos. </p>
+      <br><p class="subtitle" style="margin-top: 20px;"><strong>Sistemas Operativos:</strong> En cuanto al sistema informático de la empresa, tenemos varios servicios muy útiles. Uno de ellos, proporciona a todos los ordenadores la conectividad a la red sin hacer nada, así que no vas a tener que preocuparte por configurarlo. Hay otro que permite tener un link propio que nos lleva a nuestra web de la empresa. Otro permite enviar correos electrónicos. También tenemos otro que permite gestionar las páginas web a las que vas a tener, o no, autorización para entrar. Para acabar, tenemos un servicio que simplifica y asegura la administración de los sistemas informáticos de la empresa. Con él, puedes gestionar toda la información de usuarios, equipos y recursos, lo que te permite tener un control total sobre quién tiene acceso a qué dentro de la empresa.
+      </p>
+      <p class="subtitle" style="margin-top: 20px;"><strong>Automatizacion y Robotizacion:</strong> Sobre la robotización de la empresa, hablamos sobre muchas funciones que hay sobre ello. Por ejemplo la iluminación de carteles publicitarios personalizados, temporizadores, sistemas de abertura de puertas relacionado con una tabla que apunta la hora de salida y entrada de los empleados, control de temperatura e iluminación en zonas de trabajo y muchos más.</p>
+        
+      <h1 class="contactfrase">WHAT'S NEXT?</h1>
+      <div class="contactfrase1">Do something about your data, contact us today.</div>
+      <div class="contact-button">
+        <button onclick="redireccionarcnt()">Contact Us!</button>
+      </div>
+  </div>
+  <div class="bottom-info">
+      <div class="textopub">Siguenos en:</div>
+      <hr class="hr1">
+  </div>
+  <div class="Facebook">
+    Facebook: LittleData
+  </div>
+  <hr class="hr2">
+  <span class="Instagram">
+    <br>Instagram: @LittleData
+  </span>
+  <hr class="hr3">
+  <span class="Twitter">
+    <br>Twitter: @LittleData
+  </span>
+  <hr class="hr4">
+</body>
+<script>
+  function redireccionarint() {
+    window.location.href = "index.html";
+}
+</script>
+<script>
+  function redireccionarsbrn() {
+    window.location.href = "sobre_nosotros.html";
+}
+</script>
+<script>
+  function redireccionarcnt() {
+    window.location.href = "contact.html";
+}
+</script>
+<script>
+  function redireccionarsrv() {
+    window.location.href = "servicios.html";
+}
+</script>
+<script>
+  function redireccionar() {
+    window.location.href = "Login/index.html";
+}
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+  var parallaxImage = document.querySelector('.parallax-image');
+  var scrollPosition = window.pageYOffset;
+
+  parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.4) + 'px)';
+});
+</script>
+
+</html>

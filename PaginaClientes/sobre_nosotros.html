@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style_sobren.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <div class="logo">
+          <img src="Logo.png" alt="Logo">
+      </div>
+      <div class="centered">
+        <button onclick="redireccionarint()">Inicio</button>
+        <button onclick="redireccionarsbrn()">Sobre Nosotros</button>
+        <button onclick="redireccionarsrv()">Servicios</button>
+        <button onclick="redireccionarcnt()">Contacto</button>
+      </div>
+      <div class="right">
+          <button onclick="redireccionar()">Login & Register</button>
+      </div>
+  </nav>
+  <div class="parallax-container">
+    <div class="parallax-image"> <img src="mika-baumeister-J5yoGZLdpSI-unsplash.jpg"></div>
+  </div>
+  <div class="info">
+    <br>
+    <h3 style="text-align: left;">Sobre Nosotros</h3>
+    <img src="pexels-manuel-geissinger-325229.jpg">
+    <h3 class="subtitle" style="margin-top: 300px;">LittleData Tu socio en datos para PYMES</h3>
+    <p class="subtitle" style="margin-top: 20px;">Nos enfocamos en tres áreas clave</p>
+    <ol class="areasf" style="margin: 30px 0 0 220px">
+      <li>DataOps</li>
+      <li>APIs</li>
+      <li>Contratos Inteligentes</li>
+    </ol>
+    <p class="subtitle" style="margin-top: 20px;">Estamos ubicados en Gibraltar, una ubicación estratégica históricamente importante que nos permite ofrecer nuestros servicios a nivel local en Gibraltar, España, Europa e internacionalmente.</p>
+    <p class="subtitle" style="margin-top: 20px;"><strong>Misión y Filosofía</strong></p>
+    <p class="subtitle" style="margin-top: 20px;"><strong>Misión:</strong> Ayudarte a alcanzar tus expectativas comerciales entregando resultados de valor utilizando metodologías ágiles y lean.</p>
+    <p class="subtitle" style="margin-top: 20px;"><strong>Filosofía:</strong> Somos una empresa de consultoría comprometida, enfocada exclusivamente en los requisitos y objetivos de nuestros clientes. Nuestra filosofía se basa en un conjunto simple de principios:</p>
+    <ul class="puntoss">
+      <li><strong>Personal:</strong> Nuestro personal es nuestra fortaleza. Empleamos a personas altamente educadas y capacitadas para brindar a nuestros clientes la máxima atención, dedicación y compromiso. Empoderamos a cada individuo para que tome decisiones con una supervisión administrativa mínima.</li>
+      <li><strong>Honestidad:</strong> Practicamos un modelo de negocio transparente, manteniendo a nuestros clientes completamente informados sobre toda la situación y asegurándonos de que comprendan todos los aspectos de la asociación antes de consolidar cualquier compromiso. Nos esforzamos por relaciones a largo plazo y clientes dispuestos a alcanzar sus objetivos con nuestra ayuda.</li>
+      <li><strong>Confiabilidad:</strong> Cumplimos o superamos cada uno de nuestros objetivos y promesas; de lo contrario, no los hacemos. No tomamos a la ligera nuestros compromisos. La entrega de resultados para nuestros clientes es primordial.</li>
+      <li><strong>Calidad:</strong> La calidad del servicio es el fundamento de nuestra práctica. Utilizamos herramientas y técnicas avanzadas para garantizar que entregamos una solución de calidad.</li>
+    </ul>
+    <h1 class="contactfrase">¿QUÉ SIGUE?</h1>
+    <div class="contactfrase1">Haz algo con tus datos, contáctanos hoy mismo.</div>
+    <div class="contact-button">
+      <button onclick="redireccionarcnt()">¡Contáctanos!</button>
+    </div>    
+  </div>
+  <div class="bottom-info">
+      <div class="textopub">Siguenos en:</div>
+      <hr class="hr1">
+  </div>
+  <div class="Facebook">
+    Facebook: LittleData
+  </div>
+  <hr class="hr2">
+  <span class="Instagram">
+    <br>Instagram: @LittleData
+  </span>
+  <hr class="hr3">
+  <span class="Twitter">
+    <br>Twitter: @LittleData
+  </span>
+  <hr class="hr4">
+</body>
+<script>
+  function redireccionarint() {
+    window.location.href = "index.html";
+}
+</script>
+<script>
+  function redireccionarsbrn() {
+    window.location.href = "sobre_nosotros.html";
+}
+</script>
+<script>
+  function redireccionarcnt() {
+    window.location.href = "contact.html";
+}
+</script>
+<script>
+  function redireccionarsrv() {
+    window.location.href = "servicios.html";
+}
+</script>
+<script>
+  function redireccionar() {
+    window.location.href = "Login/index.html";
+}
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+  var parallaxImage = document.querySelector('.parallax-image');
+  var scrollPosition = window.pageYOffset;
+
+  parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.4) + 'px)';
+});
+</script>
+
+</html>

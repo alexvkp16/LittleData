@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <div class="logo">
+          <img src="Logo.png" alt="Logo">
+      </div>
+      <div class="centered">
+        <button onclick="redireccionarint()">Inicio</button>
+        <button onclick="redireccionarsbrn()">Sobre Nosotros</button>
+        <button onclick="redireccionarsrv()">Servicios</button>
+        <button onclick="redireccionarcnt()">Contacto</button>
+      </div>
+      <div class="right">
+          <button onclick="redireccionar()">Login & Register</button>
+      </div>
+  </nav>
+  <div class="parallax-container">
+    <div class="parallax-image"> <img src="mika-baumeister-J5yoGZLdpSI-unsplash.jpg"></div>
+  </div>
+  <div class="info">
+    <br>
+    <h3 style="text-align: left;">Obtén valor de tus datos, grandes y pequeños.</h3>
+    <p style="text-align: left;">Centrándonos en mejorar la gestión y control de datos en todo el ciclo de vida de los <br> datos. En <strong>littledata</strong>, nos enfocamos en ayudar a las pequeñas y medianas empresas<br> (PYME) no solo a sobrevivir, sino a prosperar extrayendo valor de sus datos. Nos <br> especializamos en DataOps, incluyendo IA / ML, APIs y contratos inteligentes.</p>
+    <img src="AdobeStock_85249439a.jpg">
+    <h3 style="margin-top: 40px;">DataOps</h3>
+    <p style="margin-top: 40px;"><strong>DataOps</strong> es una metodología automatizada y orientada a procesos utilizada por equipos de análisis y datos para mejorar la calidad y reducir el tiempo de ciclo de los análisis de datos. Aunque <strong>DataOps</strong> comenzó como un conjunto de mejores prácticas, ahora se ha convertido en un enfoque nuevo e independiente para los análisis de datos.</p>
+    <h3 style="margin-top: 40px;">Contratos inteligentes</h3>
+    <p>Un <strong>contrato inteligente</strong> es un protocolo informático diseñado para facilitar, verificar o hacer cumplir digitalmente la negociación o ejecución de un contrato. Los contratos inteligentes permiten realizar transacciones creíbles sin la intervención de terceros. Estas transacciones son rastreables e irreversibles. El objetivo de los contratos inteligentes es proporcionar seguridad y costos de transacción bajos en comparación con los contratos tradicionales.</p>
+    <h3 style="margin-top: 40px;">APIs</h3>
+    <p>La economía de las <strong>APIs</strong> está madurando, cada vez más empresas están publicando sus servicios digitales a través de <strong>APIs</strong>. Un número creciente de organizaciones está trabajando juntas para ofrecer productos basados en <strong>APIs</strong> que son beneficiosos no solo para ellos mismos, sino también valiosos para sus clientes.</p>
+    <hr class="linea-fina">
+    <h1 class="contactfrase">¿QUÉ SIGUE?</h1>
+    <div class="contactfrase1">Haz algo con tus datos, contáctanos hoy mismo.</div>
+    <div class="contact-button">
+      <button onclick="redireccionarcnt()">¡Contáctanos!</button>
+      </div>
+  </div>
+  <div class="bottom-info">
+      <div class="textopub">Siguenos en:</div>
+      <hr class="hr1">
+  </div>
+  <div class="Facebook">
+    Facebook: LittleData
+  </div>
+  <hr class="hr2">
+  <span class="Instagram">
+    <br>Instagram: @LittleData
+  </span>
+  <hr class="hr3">
+  <span class="Twitter">
+    <br>Twitter: @LittleData
+  </span>
+  <hr class="hr4">
+</body>
+<script>
+  function redireccionarint() {
+    window.location.href = "index.html";
+}
+</script>
+<script>
+  function redireccionarsbrn() {
+    window.location.href = "sobre_nosotros.html";
+}
+</script>
+<script>
+  function redireccionarcnt() {
+    window.location.href = "contact.html";
+}
+</script>
+<script>
+  function redireccionarsrv() {
+    window.location.href = "servicios.html";
+}
+</script>
+<script>
+  function redireccionar() {
+    window.location.href = "Login/index.html";
+}
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+  var parallaxImage = document.querySelector('.parallax-image');
+  var scrollPosition = window.pageYOffset;
+
+  parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.4) + 'px)';
+});
+</script>
+<script>
+  function redireccionarsn() {
+    window.location.href = "sobre_nosotros.html";
+}
+</script>
+
+</html>
